@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body background="bg.jpg">
+    <div class="screen join-screen active">
+        <div class="form" style="background: none; border: none; position: relative; left: -100%; transform: translateX(-50%); transition: left 1s ease-in;">
+            <h2 id="share-heading" style="color: #fff;">
+                Share your files<br>
+                <span style="font-weight: bold;">securely</span>
+            </h2>
+            <div class="form-input">
+                <button id="sender-start-con-btn">Create room</button>
+            </div>
+        </div>
+        
+        
+            <div class="form-input" id="join-id" style="color: #fff;"></div>
+        </div>
+    </div>
+    <div class="screen fs-screen">
+        <div class="file-input">
+            <label for="file-input" style="color: #fff;">
+                Click here to select files for sharing
+            </label>
+            <input type="file" id="file-input">
+        </div>
+        <div class="files-list">
+            <div class="title" style="color: #fff;">Shared files:</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+
+</html>
